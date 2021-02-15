@@ -1,0 +1,361 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana,sans-serif;
+  Font size: 1.2rem;
+  margin: 0px;
+  padding:0px;
+  background-color: rgb(242, 242, 242);
+}
+img {
+  width: 100%;
+  height: auto;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+a{
+text-decoration: none;
+color: rgb(81, 170, 247);
+}
+a:hover{
+color:rgb(114, 173, 219);
+text-decoration: underline;
+}
+#topbar{
+  background-color: rgb(63, 63, 56);
+  height: 35px;
+}
+.socialmeida{
+  width:30%;
+  float: left;
+}
+.socialmeida img{
+  height: 20px;
+  width: 20px;
+  margin-left:10px;
+  margin-top:8px;
+}
+.signup{
+  float: right;
+  width:60%;
+  text-decoration:none;
+  height: 20px;
+  padding-top:5px;
+  margin-right:10px;
+  text-align: right;
+}
+
+.toplinkbtn{
+  display: inline-block;
+  height: 24px;
+  width: 60px;
+  background: rgb(174, 189, 54);
+  border:0px;
+  border-radius: 5px;
+  margin-left:10px;
+}
+.toplinkbtn:hover{
+  background: rgb(188, 206, 30);
+  font-size:14px;
+  border:0px;
+  padding: 0px;
+}
+.toplinkbtn:link,
+.toplinkbtn:visited{
+  background: rgb(188, 206, 30);
+  font-size:14px;
+  border:0px;
+  padding: 0px;
+}
+.toplinkbtn:ative{
+  background: rgb(188, 206, 30);
+  font-size:14px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+header{
+  background-color: rgb(223, 112, 30);
+  height: 70px;
+}
+nav{
+  float: right;
+  margin-right: 15px;
+}
+nav ul{
+  padding: 0px;
+  margin: 0px;
+}
+nav ul{
+  padding: 0px;
+  margin: 0px;
+}
+nav ul li {
+  display: inline-block;
+  height: 70px;
+}
+nav ul li:hover{
+  background-color:rgb(242, 108, 12);
+  border-bottom: 3px solid rgb(174, 189, 54);
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  height: 80px;
+  margin-top:18px;
+  padding:10px;
+}
+nav ul li a:hover{
+  font-decoration:bold;
+}
+#logo{
+  float:left;
+  width: 300px;
+}
+#logo img{
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  padding-left:10px;
+  display: inline-block;
+  float: left;
+}
+#logo h1{
+  color: white;
+  font-size: 30px;
+  padding:0px;
+  float:left;
+  margin-top:15px;
+  margin-left:5px;
+}
+.slider img {
+  height: 500px;
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 20% 20% 20% auto;
+  grid-gap: 2px;
+  background-color:rgb(242, 242, 242);
+  margin:5px 0px;
+  padding:5px 0px;
+
+}
+.grid-container .containers{
+  background-color: rgb(255, 255, 255);
+  min-height: 250px;
+  padding:15px;
+  margin:10px;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.40);
+    text-align: justify;
+
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+}
+.card-content h3{
+  text-align: left;
+  padding: 5px 0 ;
+  font-size: 1.3rem;
+
+}
+.card a{
+  display:inline-block;
+  padding-top:10px;
+  text-decoration: none;
+
+}
+.video{
+  position: relative;
+  overflow: hidden;
+  width: 90%%;
+  margin-right: 10px;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%
+}
+.coursesdetails{
+  background-color:rgb(237, 237, 237);
+  padding-bottom: 10px;
+}
+.slog{
+  padding-left:20px;
+  padding-bottom: 10px;
+  padding-top:15px;
+}
+.grid-concourse{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2px;
+  background-color:rgb(237, 237, 237);
+
+}
+.grid-concourse .course{
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+.course h4 ,.course h5{
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.course1{
+  border-radius:  15px;
+  border-color: rgb(188, 206, 30);
+  border-style: solid;
+}
+.course1 >img{
+  border-radius: 0 0 15px 15px;
+  border-bottom: 5px solid rgb(188, 206, 30);
+}
+.course2{
+  border-radius: 15px;
+  border-color: rgb(223, 112, 30);
+  border-style: solid;
+}
+.course2 >img{
+  border-radius: 0 0 15px 15px;
+  border-bottom: 5px solid rgb(223, 112, 30);
+}
+.course3{
+  border-radius: 15px;
+  border-color: rgb(46, 126, 196);
+  border-style: solid;
+}
+.course3 >img{
+  border-radius: 0 0 15px 15px;
+  border-bottom: 5px solid rgb(46, 126, 196);
+}
+.course4{
+  border-radius: 15px;
+  border-color: rgb(75, 75, 68);
+  border-style: solid;
+}
+.course4 >img{
+  border-radius: 0 0 15px 15px;
+  border-bottom: 5px solid rgb(75, 75, 68);
+}
+.coursename{
+  text-decoration: underline;
+}
+.courseteacher{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 20%;
+}
+.courseteacher img{
+  border-radius: 50%;
+  border: 1px solid white;
+  display:inline-block;
+  margin-top:-50px;
+}
+.fee{
+  color:white;
+  margin:-12px;
+  margin-top:10px;
+  text-align: center;
+  height: 35px;
+  padding-top:10px;
+  font-weight: bold;
+}
+.fee1{
+  border-radius: 0  0 15px 15px;
+  background-color: rgb(188, 206, 30);
+}
+.fee2{
+  border-radius: 0  0 15px 15px;
+  background-color: rgb(223, 112, 30);
+}
+
+.fee3{
+  border-radius: 0  0 15px 15px;
+  background-color: rgb(46, 126, 196);
+}
+.fee4{
+  border-radius: 0  0 15px 15px;
+  background-color: rgb(75, 75, 68);
+}
+footer{
+  clear: both;
+  background-color:rgb(88, 88, 88);
+  display:flex;
+  min-height: 300px;
+  height: auto;
+  color:white;
+
+}
+.companythings{
+  height: 30px;
+  background-color: rgb(63, 63, 56);
+  text-align: center;
+  padding-top:5px;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+.flexbox{
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left:20px;
+}
+.flexbox h3{
+  margin-top:20px;
+  color:rgb(237, 194, 7);
+}
+.flexbox ul li{
+  margin-top:5px;
+  list-style: none;
+  pading:0px;
+}
+.flexbox img{
+  width:25px;
+  height: auto;
+}
+#map{
+  flex-basis: 45%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right:20px;
+  margin-left:10px;
+
+}
+#map h3{
+  text-align: center;
+  margin-top:10px;
+  color:rgb(237, 194, 7);
+}
+#imgmap{
+  margin-top: 10px;
+
+}
+#imgmap img{
+  height: 200px;
+  width:auto;
+  box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.40);
+  margin-left:10px;
+}
