@@ -114,7 +114,9 @@ nav ul li a{
   padding:10px;
 }
 nav ul li a:hover{
+  color: white;
   font-decoration:bold;
+  text-decoration: none;
 }
 #logo{
   float:left;
@@ -147,8 +149,8 @@ nav ul li a:hover{
   grid-template-columns: 20% 20% 20% auto;
   grid-gap: 2px;
   background-color:rgb(242, 242, 242);
-  margin:5px 0px;
   padding:5px 0px;
+  border-bottom: 3px solid orange;
 
 }
 .grid-container .containers{
@@ -196,6 +198,7 @@ nav ul li a:hover{
 .coursesdetails{
   background-color:rgb(237, 237, 237);
   padding-bottom: 10px;
+    border-bottom: 3px solid orange;
 }
 .slog{
   padding-left:20px;
@@ -358,4 +361,372 @@ footer{
   width:auto;
   box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.40);
   margin-left:10px;
+}
+/*************************Contact us ******************/
+.formflex{
+  display: flex;
+  border-bottom: 3px solid orange;
+  justify-content: center;
+  position: relative;
+  width:100%;
+
+}
+.formflex::before{
+  content: "";
+  background-image:url("../images/email.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity:0.3;
+  position: absolute;
+  z-index: -1;
+
+}
+
+.flexbody{
+  padding:20px;
+  margin :10px;
+  margin-top:10px;
+  flex-basis: 40%;
+}
+.contactcon{
+  margin-bottom:10px;
+
+}
+.contactcon label{
+  display:inline-block;
+  width:100%;
+  margin-bottom: 5px;
+
+}
+.contactcon input{
+  height: 30px;
+  width: 100%;
+  padding:5px;
+}
+.contactcon textarea{
+  width: 100%;
+  height: 60px;
+  padding:5px;
+
+}
+.flexbody button{
+   width:100%;
+   height:30px;
+   background: rgb(174, 189, 54);
+   border:0xp;
+}
+.flexbody button:hover{
+  background: rgb(188, 206, 30);
+}
+.flexbody button:active , button:visited{
+  background: rgb(188, 206, 30);
+  border:0px;
+}
+/*****************about us *********************/
+
+.aboutus{
+  display: flex;
+  margin-top:10px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid orange;
+  justify-content: center;
+}
+.aboutcont{
+  flex-basis: 98%;
+  flex-wrap: wrap;
+
+}
+.aboutcont h4 {
+  margin:10px auto;
+  margin-bottom: 10px;
+}
+.aboutus p{
+  text-align: justify;
+  margin-bottom: 10px;
+  float:left;
+}
+.aboutus p img{
+  width:300px;
+  height: auto;
+  border:3px solid rgb(63, 63, 56);
+  float:right;
+  padding:5px;
+  margin:10px;
+}
+/****************Gallery***************************/
+.gallery{
+  display: flex;
+  margin:5px 5px;
+  width:100%;
+  flex-wrap: wrap;
+  border-bottom: 3px solid orange;
+  padding-bottom:10px;
+}
+.galleryheading{
+  width: 100%;
+  margin-left:10px;
+}
+.gallerydir{
+  flex-basis: 23%;
+  border:3px solid rgb(223, 112, 30);
+  padding:10px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin:10px;
+  text-align: center;
+  background-color: rgb(193, 148, 11);
+}
+.gallerydir:hover{
+   filter: grayscale(var(--value, 0%));
+   background-color: rgba(0,0,0,0.9);
+
+}
+.gallerydir img{
+  margin-bottom: 5px;
+  filter: grayscale(var(--value, 80%))
+}
+.gallerydir img:hover{
+    filter: grayscale(var(--value, 0%))
+}
+.gallerydir a:hover{
+   text-decoration: none;
+}
+
+.demo-btn {
+		display: inline-block;
+		margin: 0 2.5px 4vh 2.5px;
+		text-decoration: none;
+		color: grey;
+		padding: 15px;
+		line-height: 1;
+		min-width: 140px;
+		background: rgba(0,0,0, 0.07);
+		border-radius: 6px;
+	}
+.demo-btn:hover {
+		background: rgba(0,0,0,0.12);
+}
+
+	@media (max-width: 640px) {
+
+	.demo-btn {
+		min-width: 0;
+		font-size: 14px;
+	}
+}
+/****************gallery show *****************/
+.galleryheading span{
+    font-size: 15px;
+}
+.photoalbum{
+  flex-basis: 24%;
+  padding:10px;
+  margin:5px;
+}
+.photoalbum:hover{
+  filter: sepia(0.8);
+  box-shadow: 1px 1px 5px red;
+}
+.pictures{
+
+}
+.pictures img{
+  transition: 1s;
+  padding: 15px;
+  width:300px;
+}.pictures img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+/*********************login*******************/
+.login{
+  display: flex;
+  margin:10px;
+  border-bottom: 3px solid orange;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.login form{
+  flex-basis: 28%;
+  min-height: 100px;
+  padding:20px;
+}
+.logindetails{
+  margin-top:10px;
+}
+.logindetails label{
+  display: block;
+  margin-bottom:10px;
+}
+.logindetails input{
+  display: block;
+  height: 30px;
+  width:100%;
+  padding-left:8px;
+}
+.login button{
+  margin-top:10px;
+  display: inline-block;
+  height: 24px;
+  width: 60px;
+  background: rgb(174, 189, 54);
+  border: 2px solid rgb(75, 75, 68);
+  border-radius: 5px;
+}
+.login .loginpic{
+  border-right: 2px solid orange;
+  padding-right:20px;
+  padding-top:25px;
+}
+/***********************signup******************/
+.signupage{
+  display:flex;
+  border-bottom: 3px solid orange;
+  justify-content: center;
+}
+.signupage{
+  flex-basis: 28%;
+  min-height: 100px;
+  padding:20px;
+
+}
+.signupage .loginpic{
+  border-right: 2px solid orange;
+  padding-right:20px;
+}
+.signupage form{
+  flex-basis: 28%;
+  min-height: 100px;
+  padding:20px;
+}
+
+.signupage .loginpic img{
+  height: 300px;
+}
+.signupage button{
+  margin-top:10px;
+  display: inline-block;
+  height: 24px;
+  width: 60px;
+  background: rgb(174, 189, 54);
+  border: 2px solid rgb(75, 75, 68);
+  border-radius: 5px;
+}
+
+.signupage .loginpic p{
+  margin-top: -50px;
+}
+/****************events**************/
+.events{
+  display: flex;
+  border-bottom: 3px solid orange;
+  padding: 10px;
+  justify-content:space-between;
+}
+.event{
+  flex-basis: 49.5%;
+  padding:10px;
+  flex-wrap:wrap;
+  background-color: rgb(147, 218, 242);
+
+}
+.eventheading  h3{
+  margin-left:10px;
+  margin-top:10px;
+}
+.event:hover{
+  background-color: rgb(49, 158, 247);
+}
+.event h5{
+   display: block;
+   font-size:18px;
+}
+.event img{
+   width:40%;
+   border:6px solid rgb(88, 88, 88);
+   float:left;
+   margin-right:10px;
+}
+.event button, .event button:hover{
+  background: rgb(188, 206, 30);
+  font-size: 14px;
+  border: 2px solid rgb(75, 75, 68);
+  padding: 0px;
+  margin:0px;
+}
+.event p{
+  margin: 5px 0px;
+  text-align: justify;
+}
+/*************** eventdetails**************/
+.eventdetails{
+  border-bottom: 3px solid orange;
+  margin:10px;
+}
+.eventdetails p{
+  text-align: justify;
+}
+/************** course details *******************/
+.coursedetails{
+  border-bottom: 3px solid orange;
+  margin:10px;
+  display:flex;
+  justify-content: center;
+  min-height: 400px;
+}
+.courselearn{
+  flex-basis: 60%;
+}
+.courselearn h4 {
+  margin-bottom:10px;
+}
+.courselearn ul{
+  margin-left:20px;
+  margin-bottom: 10px;
+}
+.courselearn ul li{
+  list-style-image: url();
+  list-style-type:square;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: rgb(223, 112, 30);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.panel ul li{
+  font-size: 14px;
+  padding:10px 0px;
 }
